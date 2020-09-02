@@ -13,7 +13,7 @@ Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato" -->
   // echo strpos($mail, '@') . "<br>";
   // echo is_numeric($age) . "<br>";
 
-  if (strlen($name) > 3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($age)) {
+  if (strlen($name) > 3 && strpos($mail, '.') !== false && strpos($mail, '@') && is_numeric($age)) {
     echo "<div style='color: green; font-weight: 600;''>Accesso RIUSCITO!</div>";
   } else {
     echo "<div style='color: red; font-weight: 600;''>Accesso NEGATO!</div>";
